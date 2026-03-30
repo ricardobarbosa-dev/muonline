@@ -41,6 +41,28 @@ section {
     border-radius: 10px;
 }
 
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.gothic-glow {
+    text-shadow: 0 0 20px rgba(139, 0, 0, 0.6), 0 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+.ember-bg {
+    background-image: radial-gradient(circle at 50% 50%, rgba(139, 0, 0, 0.08) 0%, transparent 80%);
+}
+
+.smoke-overlay {
+    background: linear-gradient(transparent, #050505 95%), url('https://www.transparenttextures.com/patterns/dark-matter.png');
+    opacity: 0.4;
+}
+
+.blade-shine:hover {
+    box-shadow: inset 0 1px 0 0 rgba(233, 195, 73, 0.3);
+    border-top: 1px solid #8B0000;
+}
+
 /* nav */
 
 .nav-link.active,
@@ -72,26 +94,6 @@ section {
 
 .background-button {
     background: #B80000;
-}
-
-/* title */
-.title-main {
-    font-family: "Newsreader", serif;
-    color: #ffffff;
-    font-weight: 900;
-    text-shadow:
-        0 0 2px rgba(255, 255, 255, 0.9),
-        0 0 3px rgba(255, 0, 0, 0.7),
-        0 0 5px rgba(255, 0, 0, 0.6),
-        0 0 5px rgba(255, 0, 0, 0.5);
-}
-
-.title-sub {
-    color: #b80000;
-    font-weight: 900;
-    text-shadow:
-        0 0 4px rgba(255, 0, 0, 0.5),
-        0 0 4px rgba(255, 0, 0, 0.35);
 }
 
 /* news */
