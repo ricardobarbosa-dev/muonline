@@ -1,0 +1,21 @@
+{
+    "pt": {
+        "nav_home": "INÍCIO",
+        "nav_about": "RANKING",
+        "nav_project": "BAIXAR",
+        "nav_contact": "REGISTRAR",
+        "nav_login": "LOGIN",
+        "nav_info": "INFORMAÇÕES",
+        "nav_info_mobile": "INFO",
+        "nav_shop": "SHOPPING"
+    },
+    "en": {
+        "nav_home": "HOME",
+        "nav_about": "RANK",
+        "nav_project": "DOWNLOAD",
+        "nav_contact": "REGISTER",
+        "nav_login": "LOGIN",
+        "nav_info": "INFORMATION",
+        "nav_shop": "SHOPPING"
+    }
+}

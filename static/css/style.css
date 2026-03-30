@@ -1,0 +1,153 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* base */
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #B80000 #ec131325;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Newsreader", serif;
+    color: #8B0000;
+}
+
+section {
+    overflow: hidden;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #B80000;
+    border-radius: 10px;
+}
+
+/* nav */
+
+.nav-link.active,
+.nav-link:hover {
+    color: #B80000;
+    transition: all 0.3s ease;
+}
+
+/* timeline */
+
+.timeline-item.active .dot {
+    background-color: #B80000;
+    box-shadow: 0 0 20px 5px rgba(235, 44, 37, 0.4);
+    transform: scale(1.1);
+}
+
+/* language */
+
+.lang-btn:not(.active) img {
+    opacity: 0.4;
+}
+
+.lang-btn.active img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* buttons */
+
+.background-button {
+    background: #B80000;
+}
+
+/* title */
+.title-main {
+    font-family: "Newsreader", serif;
+    color: #ffffff;
+    font-weight: 900;
+    text-shadow:
+        0 0 2px rgba(255, 255, 255, 0.9),
+        0 0 3px rgba(255, 0, 0, 0.7),
+        0 0 5px rgba(255, 0, 0, 0.6),
+        0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.title-sub {
+    color: #b80000;
+    font-weight: 900;
+    text-shadow:
+        0 0 4px rgba(255, 0, 0, 0.5),
+        0 0 4px rgba(255, 0, 0, 0.35);
+}
+
+/* news */
+.ember-bg {
+    background-image: radial-gradient(circle at 50% 50%, rgba(139, 0, 0, 0.08) 0%, transparent 80%);
+}
+
+.smoke-overlay {
+    background: linear-gradient(transparent, #050505 95%), url('https://www.transparenttextures.com/patterns/dark-matter.png');
+    opacity: 0.4;
+}
+
+/* slide swiper */
+.swiper {
+    width: 100%;
+    position: relative;
+}
+
+/* Paginação personalizada com a cor do seu tema */
+.swiper-pagination-bullet {
+    background: #8b0000 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff0000 !important;
+    width: 20px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 767px) {
+    .swiper-slide {
+        padding: 0 10px;
+        /* Respiro lateral no mobile */
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* No Desktop, anulamos o comportamento do Swiper para virar o Grid da imagem 2 */
+    .swiper-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 1.5rem;
+        transform: none !important;
+        /* Trava o slide */
+        height: 600px;
+    }
+
+    .swiper-slide {
+        width: auto !important;
+        margin: 0 !important;
+    }
+
+    .swiper-pagination {
+        display: none !important;
+    }
+}

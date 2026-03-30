@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#05070a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="static/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <title>ExpertMU - Servidor de MU Online [MMORPG]</title>
+</head>
+
+<body class="text-white font-space selection:bg-blue-500/30 bg-[#050505]">
+    <!-- menu nav desktop -->
+    <nav
+        class="fixed top-0 w-full h-[5.5rem] bg-[#020202] backdrop-blur-md border-b border-[#ec13132d] flex items-center z-[1000]">
+        <div class="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
+            <div class="flex items-center gap-12">
+                <div class="flex items-center">
+                    <div
+                        class="background-button p-0.5 rounded-lg flex items-center justify-center w-10 h-10 shrink-0 shadow-[0_0_15px_rgba(235,44,37,0.4)]">
+                        <img src="static/images/muonline.png" alt="Logo" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <ul class="hidden md:flex items-center gap-10 text-sm font-medium uppercase tracking-wider">
+                    <li><a href="#home"
+                            class="nav-link flex items-center gap-2 text-[#94a3b8] hover:text-[#B80000] transition text-xs font-bold"><span
+                                data-i18n="nav_home">INÍCIO</span></a></li>
+                    <li><a href="#about"
+                            class="nav-link flex items-center gap-2 text-[#94a3b8] hover:text-[#B80000] transition text-xs font-bold"><span
+                                data-i18n="nav_about">RANKING</span></a></li>
+                    <li><a href="#projects"
+                            class="nav-link flex items-center gap-2 text-[#94a3b8] hover:text-[#B80000] transition text-xs font-bold"><span
+                                data-i18n="nav_project">BAIXAR</span></a></li>
+                    <li><a href="#knowledge"
+                            class="nav-link flex items-center gap-2 text-[#94a3b8] hover:text-[#B80000] transition text-xs font-bold"><span
+                                data-i18n="nav_contact">REGISTRAR</span></a></li>
+                    <li><a href="#knowledge"
+                            class="nav-link flex items-center gap-2 text-[#94a3b8] hover:text-[#B80000] transition text-xs font-bold"><span
+                                data-i18n="nav_info">INFORMAÇÕES</span></a></li>
+                    <li><a href="#knowledge"
+                            class="nav-link flex items-center gap-2 text-[#94a3b8] hover:text-[#B80000] transition text-xs font-bold"><span
+                                data-i18n="nav_shop">SHOPPING</span></a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button title="Fazer login"
+                    class="hidden md:block items-center justify-center px-8 py-2.5 rounded-sm bg-[#B80000] text-white text-xs font-bold uppercase tracking-widest hover:bg-[#8e0000] transition-all duration-300 cursor-pointer">
+                    <span data-i18n="nav_login">LOGIN</span>
+                </button>
+                <div class="flex items-center gap-3 border-l border-gray-800 pl-6">
+                    <button class="lang-btn" data-lang="pt"><img src="https://flagcdn.com/w40/br.png" alt="PT"
+                            class="w-5 h-3.5 rounded-sm cursor-pointer hover:opacity-100 transition flag-img"></button>
+                    <button class="lang-btn" data-lang="en"><img src="https://flagcdn.com/w40/us.png" alt="EN"
+                            class="w-5 h-3.5 rounded-sm cursor-pointer opacity-40 hover:opacity-100 transition flag-img"></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="home" class="relative min-h-[90vh] md:min-h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <div
+                class="absolute inset-0 bg-[url('/static/images/banner-bg.jpg')] bg-cover bg-center lg:bg-fixed brightness-[0.4]">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#020202]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 w-full relative z-10 pt-28">
+            <p class="text-center text-[#8b0000] text-[10px] md:text-[15px] uppercase tracking-[3px] mb-2">Classic 97D +
+                99I Hardcore Experience</p>
+            <h1 class="text-center text-[64px] md:text-[70px] lg:text-[90px] leading-none mb-14">
+                <span data-i18n="hero_h1" class="title-main md:text-[120px]">A LENDA</span>
+                <span class="title-sub text-[35px] md:text-[70px] lg:text-[50px] block pt-4">ESTÁ DE VOLTA!</span>
+            </h1>
+
+            <div class="flex items-center gap-6 mb-16 md:justify-center">
+                <p class="text-[#94a3b8] text-[1.1rem] md:text-lg max-w-[300px] md:max-w-[600px] tracking-widest leading-relaxed text-left italic"
+                    data-i18n="hero_p">
+                    Reviva a essência do MU Online clássico 97D. Uma jornada marcada pela nostalgia, batalhas intensas e
+                    a verdadeira experiência que consagrou uma geração de jogadores.
+                </p>
+            </div>
+
+            <div class="flex items-center gap-4 md:justify-center">
+                <a href="#register">
+                    <button
+                        class="flex-1 flex text-center md:flex items-center background-button hover:bg-transparent border border-[#8b0000] text-white md:w-[300px] w-[235px] px-4 md:px-20 py-4 rounded-md font-bold opacity-80 -translate-y-0.5 cursor-pointer transition-all duration-300 hover:opacity-100 hover:-translate-y-2 whitespace-nowrap uppercase"
+                        data-i18n="hero_btn">
+                        Criar conta
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                        </svg>
+                    </button>
+                </a>
+                <a href="#download">
+                    <button
+                        class="hidden md:flex items-center justify-center gap-2 text-white md:w-[300px] w-[235px] px-4 md:px-20 py-4 border border-[#B80000] hover:bg-[#B80000] rounded-md font-bold opacity-80 -translate-y-0.5 cursor-pointer transition-all duration-300 hover:opacity-100 hover:-translate-y-2 whitespace-nowrap uppercase"
+                        data-i18n="hero_btn">
+                        Baixar o jogo
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+                        </svg>
+                    </button>
+                </a>
+                <button title="Download Game"
+                    class="md:hidden p-4 rounded-md border border-[#B80000] hover:bg-[#B80000] opacity-80 -translate-y-0.5 cursor-pointer transition-all duration-300 hover:opacity-100 hover:-translate-y-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#fff">
+                        <path
+                            d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- infos -->
+    <section class="w-full bg-[#020202] text-white border-t-2 border-[#8b000052] font-sans relative z-10">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-y-8 md:gap-y-0">
+                <div class="flex flex-col items-center"><span
+                        class="text-[10px] uppercase text-red-700 tracking-[0.2em] mb-1">Status</span>
+                    <p class="text-lg font-bold flex items-center gap-2">Online <span
+                            class="text-green-500 text-[8px] animate-pulse">●</span></p>
+                </div>
+                <div class="flex flex-col items-center md:border-l md:border-[#8b000052]"><span
+                        class="text-[10px] uppercase text-red-700 tracking-[0.2em] mb-1">Versão</span>
+                    <p class="text-lg font-bold">97D + 99I</p>
+                </div>
+                <div class="flex flex-col items-center md:border-l md:border-[#8b000052]"><span
+                        class="text-[10px] uppercase text-red-700 tracking-[0.2em] mb-1">Exp / Drop</span>
+                    <p class="text-lg font-bold">5000x / 60%</p>
+                </div>
+                <div class="flex flex-col items-center md:border-l md:border-[#8b000052]"><span
+                        class="text-[10px] uppercase text-yellow-600 tracking-[0.2em] mb-1">Blood Castle</span>
+                    <p class="text-lg font-bold text-gray-200">00:42:15</p>
+                </div>
+                <div class="flex flex-col items-center md:border-l md:border-[#8b000052]"><span
+                        class="text-[10px] uppercase text-yellow-600 tracking-[0.2em] mb-1">Devil Square</span>
+                    <p class="text-lg font-bold text-gray-200">01:12:04</p>
+                </div>
+                <div class="flex flex-col items-center md:border-l md:border-[#8b000052]"><span
+                        class="text-[10px] uppercase text-red-700 tracking-[0.2em] mb-1">Players</span>
+                    <p class="text-lg font-bold">1,402</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mobile nav -->
+    <div
+        class="md:hidden fixed bottom-0 left-0 right-0 bg-[#14131341] backdrop-blur-lg border-t border-[#ec13132d] z-50 px-8 py-4">
+        <ul class="flex items-center justify-between">
+            <li><a href="#home"
+                    class="nav-link active text-[#94a3b8] hover:text-[#B80000] flex flex-col items-center transition gap-1.5"><svg
+                        class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                    </svg><span data-i18n="nav_home"
+                        class="text-[8px] font-bold uppercase tracking-widest">Início</span></a></li>
+            <li><a href="#about"
+                    class="nav-link text-gray-400 hover:text-[#B80000] flex flex-col items-center gap-1.5"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="currentColor">
+                        <path
+                            d="M280-880h400v314q0 23-10 41t-28 29l-142 84 28 92h152l-124 88 48 152-124-94-124 94 48-152-124-88h152l28-92-142-84q-18-11-28-29t-10-41v-314Zm80 80v234l80 48v-282h-80Zm240 0h-80v282l80-48v-234ZM480-647Zm-40-12Zm80 0Z" />
+                    </svg><span data-i18n="nav_about"
+                        class="text-[8px] font-bold uppercase tracking-widest">Ranking</span></a></li>
+            <li><a href="#about"
+                    class="nav-link text-gray-400 hover:text-[#B80000] flex flex-col items-center gap-1.5"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="currentColor">
+                        <path
+                            d="M480-680q17 0 28.5-11.5T520-720q0-17-11.5-28.5T480-760q-17 0-28.5 11.5T440-720q0 17 11.5 28.5T480-680Zm-40 320h80v-240h-80v240ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z" />
+                    </svg><span data-i18n="nav_info_mobile"
+                        class="text-[8px] font-bold uppercase tracking-widest">Info</span></a></li>
+            <li><a href="#knowledge"
+                    class="nav-link text-gray-400 hover:text-[#B80000] flex flex-col items-center gap-1"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="currentColor">
+                        <path
+                            d="M600-120h240v-33q-25-23-56-35t-64-12q-33 0-64 12t-56 35v33Zm162.5-137.5Q780-275 780-300t-17.5-42.5Q745-360 720-360t-42.5 17.5Q660-325 660-300t17.5 42.5Q695-240 720-240t42.5-17.5ZM480-480Zm2-140q-58 0-99 41t-41 99q0 48 27 84t71 50q0-23 .5-44t8.5-38q-14-8-20.5-22t-6.5-30q0-25 17.5-42.5T482-540q15 0 28.5 7.5T533-512q11-5 23-7t24-2h36q-13-43-49.5-71T482-620ZM370-80l-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-85 65H696q-1-5-2-10.5t-3-10.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q24 25 54 42t65 22v184h-70Zm210 40q-25 0-42.5-17.5T520-100v-280q0-25 17.5-42.5T580-440h280q25 0 42.5 17.5T920-380v280q0 25-17.5 42.5T860-40H580Z" />
+                    </svg><span data-i18n="nav_contact"
+                        class="text-[8px] font-bold uppercase tracking-widest">Registrar</span></a></li>
+            <li><a href="#knowledge"
+                    class="nav-link text-gray-400 hover:text-[#B80000] flex flex-col items-center gap-1"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="currentColor">
+                        <path
+                            d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm146.5-204.5Q340-521 340-580t40.5-99.5Q421-720 480-720t99.5 40.5Q620-639 620-580t-40.5 99.5Q539-440 480-440t-99.5-40.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm100-95.5q47-15.5 86-44.5-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160q53 0 100-15.5ZM523-537q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm-43-43Zm0 360Z" />
+                    </svg><span data-i18n="nav_login"
+                        class="text-[8px] font-bold uppercase tracking-widest">Login</span></a></li>
+        </ul>
+    </div>
+
+    <!-- news -->
+    <section class="py-16 px-4 flex flex-col items-center overflow-hidden ember-bg relative z-10">
+        <div class="mb-12 text-center">
+            <h2 class="font-serif-game text-4xl md:text-5xl font-bold italic tracking-tight uppercase">
+                Notícias</h2>
+            <div class="w-16 h-1 bg-[#8b0000] mx-auto mt-4"></div>
+        </div>
+        <div class="max-w-7xl w-full">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide md:col-span-6 h-full">
+                        <div class="relative h-[500px] md:h-full border border-zinc-800 p-8 flex flex-col justify-end bg-zinc-900 bg-cover bg-center"
+                            style="background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url('static/images/background.jpg');">
+                            <span class="text-[#8b0000] text-xs font-bold tracking-widest uppercase mb-2">Core
+                                Update</span>
+                            <h2
+                                class="font-serif-game text-4xl md:text-5xl mb-4 uppercase leading-tight text-white font-bold">
+                                V97D: THE
+                                AWAKENING</h2>
+                            <p class="text-zinc-400 text-sm mb-8 max-w-sm">Chaos machine rates fixed. Kundun respawn
+                                timer set to 12 hours in Kalima. Join the hunt for legendary artifacts.</p>
+                            <button
+                                class="w-max border border-red-700 px-8 py-3 text-red-600 uppercase text-xs font-bold hover:bg-red-900/20 transition-all">Examine</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide md:col-span-3 flex flex-col gap-4 h-full">
+                        <div
+                            class="bg-zinc-900/50 border border-zinc-800 p-6 border-l-2 border-l-red-700 flex-1 flex flex-col justify-center min-h-[220px]">
+                            <span class="text-[#8b0000] text-[10px] font-bold uppercase block mb-2">Maintenance</span>
+                            <h3 class="font-serif-game text-2xl mb-2 text-white font-semibold">Stability Patch</h3>
+                            <p class="text-zinc-500 text-xs uppercase tracking-wider">Optimizing core database for
+                                upcoming server peak during weekend events.</p>
+                        </div>
+                        <div
+                            class="bg-zinc-900/50 border border-zinc-800 p-6 border-l-2 border-l-yellow-600 flex-1 flex flex-col justify-center min-h-[220px] mt-4 md:mt-0">
+                            <span class="text-[#8b0000] text-[10px] font-bold uppercase block mb-2">Global Event</span>
+                            <h3 class="font-serif-game text-2xl mb-2 text-white font-semibold">Jewel of Soul Drop</h3>
+                            <p class="text-zinc-500 text-xs uppercase tracking-wider">Double soul drops in dungeon level
+                                3 for the next 48 hours only.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide md:col-span-3 h-full">
+                        <div
+                            class="bg-zinc-900/50 border border-zinc-800 p-8 h-full min-h-[450px] flex flex-col relative overflow-hidden">
+                            <div class="flex flex-col gap-4 mb-8">
+                                <div class="text-red-700 bg-red-950/20 p-3 border border-red-900/30 w-max">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+                                    </svg>
+                                </div>
+                                <h2 class="font-serif-game text-3xl uppercase leading-tight text-white font-semibold">
+                                    Security Update</h2>
+                            </div>
+                            <p class="italic text-zinc-400 text-lg mb-auto leading-relaxed">Our custom anti-hack system
+                                has been updated. Play fair, play hard.</p>
+                            <div class="mt-8 pt-6 border-t border-zinc-800">
+                                <span class="text-zinc-600 text-[10px] font-bold uppercase block mb-1">Verified System
+                                    Status: <span class="text-red-700">100%</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination md:hidden !bottom-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rankings -->
+    <section class="min-h-screen py-16 px-4 flex flex-col items-center overflow-hidden bg[#050505] relative z-10">
+        <div class="mb-12 text-center">
+            <h2 class="font-serif-game text-4xl md:text-5xl font-bold tracking-tight uppercase text-white">
+                Heroes of Arena</h2>
+            <span class="text-[#8b0000] uppercase text-sm">Os guerreiros mais letais do Expert!</span>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.mySwiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                grabCursor: true,
+                autoplay: {
+                    delay: 10000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                        enabled: false,
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script src="static/js/script.js"></script>
+    <script src="static/js/i18n.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="static/js/scrollrevealjs.js"></script>
+</body>
+
+</html>
