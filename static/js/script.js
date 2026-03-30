@@ -1,3 +1,28 @@
+
+// swiper news
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                enabled: false,
+            }
+        }
+    });
+});
+
+
 // nav active
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
