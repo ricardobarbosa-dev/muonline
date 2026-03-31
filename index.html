@@ -72,21 +72,21 @@
     <section id="home" class="relative min-h-[90vh] md:min-h-screen flex items-center overflow-hidden">
         <div class="absolute inset-0 -z-10">
             <div
-                class="absolute inset-0 bg-[url('/static/images/banner-bg.jpg')] bg-cover bg-center lg:bg-fixed brightness-[0.4]">
+                class="absolute inset-0 bg-[url('/static/images/banner-bg.jpg')] bg-cover bg-[position:20%_center] md:bg-center lg:bg-fixed brightness-[0.3]">
             </div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#020202]"></div>
         </div>
 
-        <div class="max-w-7xl mx-auto px-6 w-full relative z-10 pt-28">
-            <p class="text-center text-[#8b0000] text-[10px] md:text-[15px] uppercase tracking-[3px] mb-2">
+        <div class="home-classic max-w-7xl mx-auto px-6 w-full relative z-10 pt-28">
+            <p class="text-center text-[#8b0000] font-bold text-[10px] md:text-[15px] uppercase tracking-[3px] mb-2">
                 Classic 97D + 99I Hardcore Experience
             </p>
             <h1
-                class="font-headline text-center text-[64px] md:text-[90px] lg:text-[100px] font-black text-[#e5e2e1] tracking-tighter gothic-glow leading-none mb-14 pt-4">
+                class="home-title font-headline text-center text-[64px] md:text-[90px] lg:text-[100px] font-black text-[#e5e2e1] tracking-tighter gothic-glow leading-none mb-14 pt-4">
                 A LENDA <br /> <span class="text-[#8B0000] text-[50px] md:text-[80px]">RETORNOU !</span>
             </h1>
 
-            <div class="flex items-center gap-6 mb-16 justify-center">
+            <div class="home-subtitle flex items-center gap-6 mb-16 justify-center">
                 <p
                     class="text-[#C0C0C0] text-[1.1rem] md:text-lg w-full md:max-w-[600px] tracking-tight leading-relaxed text-left italic font-extralight">
                     Reviva a essência do MU Online clássico 97D. Uma jornada marcada pela nostalgia, batalhas intensas e
@@ -94,7 +94,7 @@
                 </p>
             </div>
 
-            <div class="flex items-center gap-4 justify-center md:justify-center">
+            <div class="home-buttons flex items-center gap-4 justify-center md:justify-center">
                 <a href="#register">
                     <button
                         class="flex items-center gap-1 background-button border border-[#8b0000] text-white md:w-[300px] w-[235px] px-4 md:px-20 py-4 rounded-md font-bold opacity-80 -translate-y-0.5 cursor-pointer transition-all duration-300 hover:bg-red-900/20 hover:text-[#8b0000] hover:opacity-100 hover:-translate-y-2 whitespace-nowrap uppercase">
@@ -131,7 +131,7 @@
     </section>
 
     <!-- server info bar -->
-    <section class="w-full bg-[#020202] text-white border-t-2 border-[#8b000052]">
+    <section class="server-info w-full bg-[#020202] text-white border-t-2 border-[#8b000052]">
         <div class="max-w-7xl mx-auto px-4 py-6">
             <div class="grid grid-cols-2 md:grid-cols-6 gap-y-8 md:gap-y-0">
                 <div class="flex flex-col items-center">
@@ -164,7 +164,7 @@
     </section>
 
     <!-- news -->
-    <section class="py-16 px-4 flex flex-col items-center overflow-hidden ember-bg relative z-10">
+    <section class="news-scroll py-16 px-4 flex flex-col items-center overflow-hidden ember-bg relative z-10">
         <div class="mb-12 text-center">
             <h2 class="text-4xl md:text-5xl font-bold italic tracking-tight uppercase">Notícias</h2>
             <div class="w-16 h-1 bg-[#8b0000] mx-auto mt-4"></div>
@@ -234,7 +234,7 @@
     </section>
 
     <!-- ranking -->
-    <section id="ranking" class="max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row gap-8">
+    <section id="ranking" class="rank-scroll max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row gap-8">
         <div class="flex-1 flex flex-col">
             <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
                 <div>
@@ -488,7 +488,7 @@
 
     <!-- play here -->
     <section id="playhere"
-        class="min-h-[500px] max-w-full mx-auto px-4 py-24 flex flex-col items-center justify-center gap-8 ember-bg relative z-10 overflow-hidden">
+        class="playhere-scroll min-h-[500px] max-w-full mx-auto px-4 py-24 flex flex-col items-center justify-center gap-8 ember-bg relative z-10 overflow-hidden">
         <div
             class="absolute inset-0 bg-[url('/static/images/bg-footer.jpg')] bg-cover bg-center lg:bg-fixed brightness-[0.1] -z-10">
         </div>
@@ -563,7 +563,7 @@
     </section>
 
     <!-- footer -->
-    <section id="footer" class="max-w-7xl mx-auto px-4 py-32 md:py-18 flex flex-col lg:flex-row gap-10">
+    <section id="footer" class="max-w-7xl mx-auto px-4 pb-28  md:py-24 flex flex-col lg:flex-row gap-10">
         <div class="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left gap-4">
             <img src="static/images/muonline.png" alt="Logo do Servidor" class="w-32">
 

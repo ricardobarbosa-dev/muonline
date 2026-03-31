@@ -6,6 +6,7 @@ html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #B80000 #ec131325;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -29,6 +30,14 @@ section {
 ::-webkit-scrollbar-thumb {
     background-color: #B80000;
     border-radius: 10px;
+}
+
+#home,
+.server-info,
+.news-scroll,
+.rank-scroll,
+.playhere-scroll {
+    scroll-margin-top: 2rem;
 }
 
 /* utils */

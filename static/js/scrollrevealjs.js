@@ -1,35 +1,50 @@
+const isMobile = window.innerWidth < 768;
+
 const sr = ScrollReveal({
-    distance: '50px',
-    duration: 900,
-    easing: 'cubic-bezier(0.25, 0.1, 0.25, 1)',
+    distance: isMobile ? '0px' : '60px',
+    duration: isMobile ? 0 : 1200,
+    delay: 100,
+    easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+    opacity: isMobile ? 1 : 0,
+    scale: isMobile ? 1 : 0.98,
     reset: false,
-    mobile: true
+    mobile: false,
+    viewFactor: 0.2
 });
 
-// animacoes de cima
-sr.reveal('#home', { origin: 'top' });
-
-// animacoes que vem da esquerda
-sr.reveal('#about, .work-txt, #timeline, #projects, #knowledge, #contact, #footer', {
-    origin: 'left',
-    interval: 100
+sr.reveal('#home', {
+    origin: 'top',
+    duration: 1400
 });
 
-// animacoes que vem de baixo
-sr.reveal('.about-txt', {
-    origin: 'bottom',
+sr.reveal('.server-info', {
+    origin: 'top',
     delay: 200
 });
 
-// animacoes que vem da direita
-sr.reveal('.learn-txt', {
-    origin: 'right'
+
+sr.reveal(
+    '.home-classic, .home-title, .home-subtitle, .home-buttons',
+    {
+        origin: 'left',
+        interval: 150,
+        distance: '70px'
+    }
+);
+
+
+sr.reveal('.news-scroll', {
+    origin: 'bottom',
+    delay: 250,
+    distance: '80px'
 });
 
-// animacoes do botão do whatsapp
-sr.reveal('#whatsapp', {
-    origin: 'bottom',
-    distance: '20px',
-    delay: 700,
-    scale: 0.8
+sr.reveal('.rank-scroll', {
+    origin: 'right',
+    interval: 120
+});
+
+sr.reveal('.playhere-scroll', {
+    origin: 'right',
+    delay: 200,
 });
