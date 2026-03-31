@@ -17,7 +17,7 @@ sr.reveal('#home', {
     duration: 1400
 });
 
-sr.reveal('.server-info', {
+sr.reveal('.server-info, .ranking', {
     origin: 'top',
     delay: 200
 });
