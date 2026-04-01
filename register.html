@@ -65,6 +65,133 @@
         </div>
     </nav>
 
+    <!-- regiser area -->
+    <section class="relative min-h-screen text-white overflow-hidden">
+        <div class="absolute inset-0 bg-[#0d0d0d]"></div>
+        <div class="relative z-10 min-h-screen grid lg:grid-cols-2 mx-auto top-14">
+            <div class="hidden lg:block relative border-r border-neutral-900">
+                <div class="absolute inset-0 right-0
+                bg-[url('/static/images/register_bg.png')]
+                bg-cover">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r
+                from-black/80 via-black/40 to-transparent">
+                </div>
+            </div>
+            <div class="px-8 lg:px-20 pt-32 pb-20">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12">
+                        CRIE SUA <b class="text-[#8b0000]">CONTA</b>
+                        <p class="text-zinc-500 text-xs mt-4 font-normal">
+                            Entre no jogo, evolua seu personagem e conquiste seu lugar entre as lendas!
+                        </p>
+                    </h2>
+                    <!-- forms -->
+                    <form class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="text-xs uppercase text-gray-400 tracking-widest">
+                                Login
+                            </label>
+                            <input type="text"
+                                class="w-full mt-2 bg-[#060606] border border-neutral-800 px-4 py-3 focus:border-red-600 focus:outline-none"
+                                required placeholder="digite o login" minlength="3" maxlength="10">
+                        </div>
+
+                        <div>
+                            <label class="text-xs uppercase text-gray-400 tracking-widest">
+                                Nome
+                            </label>
+                            <input type="text"
+                                class="w-full mt-2 bg-[#060606] border border-neutral-800 px-4 py-3 focus:border-red-600 focus:outline-none"
+                                required placeholder="digite seu nome" minlength="3" maxlength="20">
+                        </div>
+
+                        <div>
+                            <label class="text-xs uppercase text-gray-400 tracking-widest">
+                                E-mail
+                            </label>
+                            <input type="email"
+                                class="w-full mt-2 bg-[#060606] border border-neutral-800 px-4 py-3 focus:border-red-600 focus:outline-none"
+                                required placeholder="digite seu e-mail" minlength="5" maxlength="70">
+                        </div>
+
+                        <div>
+                            <label class="text-xs uppercase text-gray-400 tracking-widest">
+                                Senha
+                            </label>
+                            <input type="password"
+                                class="w-full mt-2 bg-[#060606] border border-neutral-800 px-4 py-3 focus:border-red-600 focus:outline-none"
+                                required placeholder="digite sua senha" minlength="4" maxlength="10">
+                        </div>
+
+                        <div>
+                            <label class="text-xs uppercase text-gray-400 tracking-widest">
+                                Confirmar Senha
+                            </label>
+                            <input type="password"
+                                class="w-full mt-2 bg-[#060606] border border-neutral-800 px-4 py-3 focus:border-red-600 focus:outline-none"
+                                required placeholder="confirme sua senha" minlength="4" maxlength="10">
+                        </div>
+
+                        <div>
+                            <label class="text-xs uppercase text-gray-400 tracking-widest">
+                                Pergunta Secreta
+                            </label>
+                            <select
+                                class="w-full mt-2 bg-[#060606] border border-neutral-800 px-4 py-3 focus:border-red-600 focus:outline-none">
+                                <option>Qual seu Mapa favorito do servidor?</option>
+                                <option>Qual seu Evento favorito do servidor?</option>
+                                <option>Qual foi o primeiro servidor que você jogou?</option>
+                                <option>Qual foi o nome do seu primeiro personagem?</option>
+                                <option>Em que ano você começou a jogar MU Online?</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="text-xs uppercase text-gray-400 tracking-widest">
+                                Resposta Secreta
+                            </label>
+                            <input type="text"
+                                class="w-full mt-2 bg-[#060606] border border-neutral-800 px-4 py-3 focus:border-red-600 focus:outline-none"
+                                required placeholder="digite a resposta secreta" maxlength="20">
+                        </div>
+                    </form>
+
+                    <!-- captcha -->
+                    <div class="mt-10 border border-neutral-800 bg-[#0a0a0a] p-5 flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 accent-red-600">
+                        <span class="uppercase text-sm tracking-widest text-gray-300">
+                            Eu não sou um robô
+                        </span>
+                    </div>
+                    <!-- terms -->
+                    <div class="mt-10 border border-neutral-800 bg-[#0a0a0a] p-5 flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 accent-red-600">
+                        <span class="uppercase text-sm tracking-widest text-gray-300">
+                            Aceito os <a href="#" class="font-bold text-[#cc0000]">Termos de uso e Privacidade</a>
+                        </span>
+                    </div>
+
+                    <!-- BUTTON -->
+                    <button class="mt-10 w-full py-4 uppercase tracking-[0.35em]
+                    font-semibold
+                    bg-gradient-to-r from-[#ff7b7b] via-[#cc0000] to-[#660000]
+                    border border-red-800
+                    shadow-[0_0_30px_rgba(255,0,0,0.35)]
+                    hover:brightness-110 transition">
+                        INICIAR JORNADA
+                    </button>
+
+                    <p class="text-center text-[10px] text-neutral-500 mt-4 uppercase tracking-widest">
+                        Ao prosseguir, sua jornada pelo continente de MU começa agora.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
     <!-- play here -->
     <section id="playhere"
         class="playhere-scroll min-h-[500px] max-w-full mx-auto px-4 py-24 flex flex-col items-center justify-center gap-8 ember-bg relative z-10 overflow-hidden">

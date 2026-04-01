@@ -35,6 +35,10 @@ section {
     border-radius: 10px;
 }
 
+::placeholder {
+    color: #444 !important;
+}
+
 #home,
 .server-info,
 .news-scroll,
