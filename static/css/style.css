@@ -85,6 +85,15 @@ section {
     background: #B80000;
 }
 
+/* primary */
+.primary {
+    background-color: #B80000;
+}
+
+.primary-text {
+    color: #B80000;
+}
+
 /* swiper */
 .swiper {
     width: 100%;
