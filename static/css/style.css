@@ -43,6 +43,13 @@ section {
     scroll-margin-top: 2rem;
 }
 
+/* animates */
+@keyframes pulse {
+    50% {
+        opacity: 0.8;
+    }
+}
+
 /* utils */
 .gothic-glow {
     text-shadow: 0 0 20px rgba(139, 0, 0, 0.6), 0 4px 10px rgba(0, 0, 0, 0.9);
