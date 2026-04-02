@@ -89,6 +89,10 @@ section {
     color: #B80000;
 }
 
+.primary-text:hover {
+    color: #B80000 !important;
+}
+
 /* swiper */
 .swiper {
     width: 100%;
