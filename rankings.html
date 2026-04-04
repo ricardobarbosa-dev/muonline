@@ -74,65 +74,99 @@
         Blood Emperor
         Eternal Legend
      -->
-    <section class="ranking relative  py-20 px-4 text-white overflow-hidden min-h-screen">
-        <div class="relative z-10 max-w-6xl mx-auto">
-            <div class="text-center mb-16 mt-24">
-                <h2 class="text-4xl md:text-6xl font-bold uppercase tracking-widest drop-shadow-lg">
-                    Hall of <span class="text-[#b30000]">Champions</span>
-                </h2>
-                <p class="text-[#666] uppercase tracking-[0.2em] text-[10px] md:text-xs mt-4 font-bold">
-                    Onde guerreiros se tornam lendas e lendas se tornam imortais.
-                </p>
-            </div>
-
-            <div class="flex flex-col md:flex-row justify-center items-end gap-24 mb-20 px-4">
-                <div class="w-full md:w-64 order-2 md:order-1 opacity-90 hover:opacity-100 transition duration-300">
-                    <div class="relative bg-[#111] border border-[#333] p-1 pb-0">
-                        <div class="absolute top-0 left-0 bg-[#ddd] text-black font-bold px-3 py-1 shadow-md">2</div>
-                        <img src="/static/images/characters/elf.jpg"
-                            class="w-full h-64 md:h-72 object-cover object-top">
-                        <div class="bg-gradient-to-b from-[#ddd] to-[#474545] text-center py-5 shadow-inner">
-                            <span
-                                class="text-[10px] text-black/70 font-bold uppercase tracking-widest block mb-1">Wanderer</span>
-                            <a href="#">
-                                <p class="text-white font-bold text-lg tracking-wider drop-shadow-md">iBeeesT_</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+    <!-- rankings -->
+    <section class="relative text-white overflow-hidden">
+        <div class="relative py-20 px-4 min-h-screen">
+            <div class="absolute inset-0 -z-10">
                 <div
-                    class="animate-pulse w-full md:w-80 order-1 md:order-2 z-10 transform scale-100 md:scale-110 shadow-[0_0_40px_rgba(218,165,32,0.15)] relative mb-4 md:mb-0 opacity-90 hover:opacity-100 transition duration-300">
-                    <div class="relative bg-[#111] border border-[#b8860b] p-1 pb-0">
-                        <div class="absolute top-0 left-0 bg-[#d4af37] text-black font-bold px-3 py-1 shadow-md">1</div>
-                        <img src="/static/images/characters/bk.jpg" class="w-full h-64 md:h-72 object-cover object-top">
-                        <div class="bg-gradient-to-b from-[#b8860b] to-[#533e09] text-center py-5 shadow-inner">
-                            <span
-                                class="text-[10px] text-black/70 font-bold uppercase tracking-widest block mb-1">Slayer</span>
-                            <a href="#">
-                                <p class="text-white font-bold text-lg tracking-wider drop-shadow-md">Rick</p>
-                            </a>
-                        </div>
-                    </div>
+                    class="absolute inset-0 bg-[url('/static/images/register_bg.png')] bg-cover bg-[position:20%_center] md:bg-center lg:bg-fixed brightness-[0.3]">
                 </div>
 
-                <div class="w-full md:w-64 order-3 md:order-3 opacity-90 hover:opacity-100 transition duration-300">
-                    <div class="relative bg-[#111] border border-[#333] p-1 pb-0">
-                        <div class="absolute top-0 left-0 bg-[#985D32] text-black font-bold px-3 py-1 shadow-md">1</div>
-                        <img src="/static/images/characters/sm.jpg" class="w-full h-64 md:h-72 object-cover object-top"
-                            alt="Malphas_Rex">
-                        <div class="bg-gradient-to-b from-[#985D32] to-[#332216] text-center py-5 shadow-inner">
-                            <span
-                                class="text-[10px] text-black/70 font-bold uppercase tracking-widest block mb-1">Overlord</span>
-                            <a href="#">
-                                <p class="text-white font-bold text-lg tracking-wider drop-shadow-md">Dan</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#020202]"></div>
             </div>
 
+            <div class="relative z-10 max-w-6xl mx-auto">
+                <!-- title -->
+                <div class="text-center mb-16 mt-24">
+                    <h2 class="text-4xl md:text-6xl font-bold uppercase tracking-widest drop-shadow-lg">
+                        Hall of <span class="text-[#b30000]">Champions</span>
+                    </h2>
+                    <p class="text-[#666] uppercase tracking-[0.2em] text-[10px] md:text-xs mt-4 font-bold">
+                        Onde guerreiros se tornam lendas e lendas se tornam imortais.
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-center items-end gap-24 mb-20 px-4">
+                    <!-- top2 -->
+                    <div class="w-full md:w-64 order-2 md:order-1 opacity-90 hover:opacity-100 transition duration-300">
+                        <div class="relative bg-[#111] border border-[#333] p-1 pb-0">
+                            <div class="absolute top-0 left-0 bg-[#ddd] text-black font-bold px-3 py-1 shadow-md">2
+                            </div>
+
+                            <img src="/static/images/characters/elf.jpg"
+                                class="w-full h-64 md:h-72 object-cover object-top">
+
+                            <div class="bg-gradient-to-b from-[#ddd] to-[#474545] text-center py-5 shadow-inner">
+                                <span class="text-[10px] text-black/70 font-bold uppercase tracking-widest block mb-1">
+                                    Wanderer
+                                </span>
+
+                                <p class="text-white font-bold text-lg tracking-wider drop-shadow-md">
+                                    iBeeesT_
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- top1 -->
+                    <div
+                        class="animate-pulse w-full md:w-80 order-1 md:order-2 z-10 transform scale-100 md:scale-110 shadow-[0_0_40px_rgba(218,165,32,0.15)] relative mb-4 md:mb-0 opacity-90 hover:opacity-100 transition duration-300">
+
+                        <div class="relative bg-[#111] border border-[#b8860b] p-1 pb-0">
+                            <div class="absolute top-0 left-0 bg-[#d4af37] text-black font-bold px-3 py-1 shadow-md">1
+                            </div>
+
+                            <img src="/static/images/characters/bk.jpg"
+                                class="w-full h-64 md:h-72 object-cover object-top">
+
+                            <div class="bg-gradient-to-b from-[#b8860b] to-[#533e09] text-center py-5 shadow-inner">
+                                <span class="text-[10px] text-black/70 font-bold uppercase tracking-widest block mb-1">
+                                    Slayer
+                                </span>
+
+                                <p class="text-white font-bold text-lg tracking-wider drop-shadow-md">
+                                    Rick
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- top3 -->
+                    <div class="w-full md:w-64 order-3 opacity-90 hover:opacity-100 transition duration-300">
+                        <div class="relative bg-[#111] border border-[#333] p-1 pb-0">
+                            <div class="absolute top-0 left-0 bg-[#985D32] text-black font-bold px-3 py-1 shadow-md">3
+                            </div>
+
+                            <img src="/static/images/characters/sm.jpg"
+                                class="w-full h-64 md:h-72 object-cover object-top">
+
+                            <div class="bg-gradient-to-b from-[#985D32] to-[#332216] text-center py-5 shadow-inner">
+                                <span class="text-[10px] text-black/70 font-bold uppercase tracking-widest block mb-1">
+                                    Overlord
+                                </span>
+
+                                <p class="text-white font-bold text-lg tracking-wider drop-shadow-md">
+                                    Dan
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-20 px-4 text-white overflow-hidden">
+        <div class="relative z-10 max-w-7xl mx-auto">
             <div
                 class="flex flex-col lg:flex-row justify-between items-center bg-[#070707] border-y border-[#1a1a1a] mb-6 p-4 gap-4">
                 <div class="w-full lg:w-auto flex-grow lg:flex-grow-0">
@@ -267,7 +301,6 @@
                 <button
                     class="w-8 h-8 flex items-center justify-center bg-[#0d0d0d] border border-[#222] text-[#666] hover:text-white hover:border-[#444] transition text-xs">&gt;</button>
             </div>
-
         </div>
     </section>
     <!-- play here -->
