@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#05070a">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Baixar o Jogo - MMORPG</title>
+    <title>Dashboard User - MMORPG</title>
 </head>
 
 <body class="text-white bg-[#050505]">
@@ -22,7 +22,7 @@
                 <div class="flex items-center">
                     <div
                         class="primary p-0.5 rounded-lg flex items-center justify-center w-10 h-10 shrink-0 shadow-[0_0_15px_rgba(235,44,37,0.4)]">
-                        <img src="static/images/muonline.png" alt="Logo" class="w-full h-full object-contain">
+                        <img src="../static/images/muonline.png" alt="Logo" class="w-full h-full object-contain">
                     </div>
                 </div>
                 <ul class="hidden md:flex items-center gap-10 text-sm font-medium uppercase tracking-wider">
@@ -65,187 +65,8 @@
         </div>
     </nav>
 
-    <!-- downloads -->
-    <section class="relative py-20 px-4 text-white overflow-hidden min-h-screen">
-        <div class="absolute inset-0 -z-10">
-            <div
-                class="absolute inset-0 bg-[url('/static/images/bg-footer.jpg')] bg-cover bg-[position:20%_center] md:bg-center lg:bg-fixed brightness-[0.3]">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#020202]"></div>
-        </div>
-        <div class="relative z-10 max-w-6xl mx-auto">
-            <div class="text-center mb-16 mt-24">
-                <h2 class="text-4xl md:text-6xl font-bold uppercase tracking-widest drop-shadow-lg">
-                    SEU DESTINO COMEÇA <span class="text-[#b30000]">AQUI!</span>
-                </h2>
-                <p class="text-[#666] uppercase tracking-[0.2em] text-[10px] md:text-xs mt-4 font-bold">
-                    Baixe, conecte e comece sua jornada!
-                </p>
-            </div>
+    <!-- dashboard user -->
 
-            <!-- cards downloads -->
-            <div class="grid grid-cols-1 place-items-center font-sans gap-10 md:grid-cols-3">
-                <!-- client lite -->
-                <div
-                    class="bg-[#1a1a1c] hover:bg-[#1b1b1d] w-80 px-8 py-6 text-center shadow-2xl border-t-2 border-zinc-800 hover:border-zinc-500 transition-all duration-300 hover:-translate-y-2">
-                    <div class="flex justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
-                            fill="#ccc">
-                            <path
-                                d="M275-115q-35-35-35-85t35-85q35-35 85-35t85 35q35 35 35 85t-35 85q-35 35-85 35t-85-35Zm264-104q-6-55-41-97t-87-57l106-107H236q-32 0-54-22t-22-54q0-20 10.5-37.5T198-622l486-291q18-11 38-5.5t31 23.5q11 18 5.5 37.5T736-827L360-600h364q32 0 54 22t22 54q0 18-4.5 35.5T778-458L539-219Z" />
-                        </svg>
-                    </div>
-                    <h2 class="text-[32px] mb-2 drop-shadow-md">
-                        Cliente Leve
-                    </h2>
-                    <p class="text-[#f3b749] text-xs font-bold tracking-widest uppercase mb-7">
-                        Versão 97D Customs
-                    </p>
-                    <p class="text-[#9aa0a6] text-sm leading-relaxed mb-8">
-                        Pacote de instalação leve contendo apenas os arquivos essenciais para jogar. Ideal para quem
-                        busca uma instalação rápida e eficiente.
-                    </p>
-                    <a href="#"
-                        class="block w-full bg-[#8c0000] hover:bg-[#b30000] text-white py-4 font-black uppercase tracking-wider transition-colors duration-300">
-                        Baixar (101 MB)
-                    </a>
-                </div>
-                <!-- client full -->
-                <div
-                    class="relative bg-[#1a1a1c] hover:bg-[#1b1b1d] w-80 px-8 py-20 text-center shadow-2xl border-t-2 border-zinc-800 hover:border-yellow-500 transition-all duration-300 hover:-translate-y-2">
-                    <span
-                        class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-yellow-500 text-[#1a1a1c] py-1 px-4 font-bold uppercase tracking-wider text-[10px] rounded-full shadow-md z-10">
-                        Recomendado
-                    </span>
-                    <div class="flex justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
-                            fill="#ccc">
-                            <path
-                                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
-                        </svg>
-                    </div>
-                    <h2 class="text-[32px] mb-2 drop-shadow-md">
-                        Cliente Completo
-                    </h2>
-                    <p class="text-[#f3b749] text-xs font-bold tracking-widest uppercase mb-7">
-                        Versão 97D Customs
-                    </p>
-                    <p class="text-[#9aa0a6] text-sm leading-relaxed mb-8">
-                        Pacote de instalação completo incluindo toda a música, sons e texturas cinematográficas.
-                        Recomendado para a experiência definitiva.
-                    </p>
-                    <a href="#"
-                        class="block w-full bg-[#8c0000] hover:bg-[#b30000] text-white py-4 font-black uppercase tracking-wider transition-colors duration-300">
-                        Baixar (124 MB)
-                    </a>
-                </div>
-
-                <!-- drivers -->
-                <!-- cliente lite -->
-                <div
-                    class="bg-[#1a1a1c] hover:bg-[#1b1b1d] w-80 px-8 py-6 text-center shadow-2xl border-t-2 border-zinc-800 hover:border-red-700 transition-all duration-300 hover:-translate-y-2">
-                    <div class="flex justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
-                            fill="#ccc">
-                            <path
-                                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
-                        </svg>
-                    </div>
-                    <h2 class="text-[32px] mb-2 drop-shadow-md">
-                        Drivers
-                    </h2>
-                    <p class="text-[#f3b749] text-xs font-bold tracking-widest uppercase mb-7">
-                        Utilidades essenciais
-                    </p>
-                    <p class="text-[#9aa0a6] text-sm leading-relaxed mb-8">
-                        Pacote de drivers e utilitários essenciais para garantir a melhor performance e compatibilidade
-                        com o servidor. Inclui otimizações para conexões, ajustes de rede e ferramentas de diagnóstico.
-                    </p>
-                    <a href="#"
-                        class="block w-full bg-[#8c0000] hover:bg-[#b30000] text-white py-4 font-black uppercase tracking-wider transition-colors duration-300">
-                        Baixar (80 MB)
-                    </a>
-                </div>
-            </div>
-    </section>
-
-    <!-- system config -->
-    <section class="relative py-20 px-4 text-white overflow-hidden min-h-screen">
-        <div class="relative z-10 max-w-6xl mx-auto">
-            <div class="mb-16 text-center">
-                <h2 class="text-4xl md:text-5xl font-semibold uppercase">
-                    Requisitos do Sistema
-                </h2>
-                <div class="w-16 h-1 bg-[#8b0000] mx-auto mt-4"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-10">
-                <!-- minimum-->
-                <div>
-                    <h3 class="tracking-[7px] uppercase text-zinc-500 mb-6">
-                        Mínimo
-                    </h3>
-
-                    <div class="space-y-6">
-
-                        <div
-                            class="bg-[#201F1F] p-6 shadow-lg border-l-4 border-zinc-600 flex justify-between transition-all hover:-translate-y-2">
-                            <p class="text-[#999] ">OS</p>
-                            <p>Windows 7 / 8.1 / 10 / 11</p>
-                        </div>
-
-                        <div
-                            class="bg-[#201F1F] p-6 shadow-lg border-l-4 border-zinc-600 flex justify-between transition-all hover:-translate-y-2">
-                            <p class="text-[#999]">RAM</p>
-                            <p>512 MB</p>
-                        </div>
-
-                        <div
-                            class="bg-[#201F1F] p-6 shadow-lg border-l-4 border-zinc-600 flex justify-between transition-all hover:-translate-y-2">
-                            <p class="text-[#999]">CPU</p>
-                            <p>Pentium 3 800 MHz</p>
-                        </div>
-
-                        <div
-                            class="bg-[#201F1F] p-6 shadow-lg border-l-4 border-zinc-600 flex justify-between transition-all hover:-translate-y-2">
-                            <p class="text-[#999]">GPU</p>
-                            <p>32MB 3D Accelerator</p>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- recommended -->
-                <div>
-                    <h3 class="tracking-[7px] uppercase text-yellow-500 mb-6">
-                        Recomendado
-                    </h3>
-                    <div class="space-y-6">
-                        <div
-                            class="bg-[#201F1F] p-6 shadow-lg border-l-4 border-yellow-600 flex justify-between transition-all hover:-translate-y-2">
-                            <p class="text-yellow-400">OS</p>
-                            <p>Windows 10 / 11</p>
-                        </div>
-                        <div
-                            class="bg-[#201F1F] p-6 shadow-lg border-l-4 border-yellow-600 flex justify-between transition-all hover:-translate-y-2">
-                            <p class="text-yellow-400">RAM</p>
-                            <p>4 GB ou mais</p>
-                        </div>
-
-                        <div
-                            class="bg-[#201F1F] p-6 shadow-lg border-l-4 border-yellow-600 flex justify-between transition-all hover:-translate-y-2">
-                            <p class="text-yellow-400">CPU</p>
-                            <p>Intel i3 / Ryzen 3</p>
-                        </div>
-
-                        <div
-                            class="bg-[#201F1F] p-6 shadow-lg border-l-4 border-yellow-600 flex justify-between transition-all hover:-translate-y-2">
-                            <p class="text-yellow-400">GPU</p>
-                            <p>GTX 750 / Radeon RX 550</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- play here -->
     <section id="playhere"
@@ -433,7 +254,7 @@
                 </a>
             </li>
             <li>
-                <a href="login.html"
+                <a href="/login.html"
                     class="nav-link text-gray-400 hover:text-[#B80000] flex flex-col items-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="currentColor">
